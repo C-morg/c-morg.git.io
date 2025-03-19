@@ -1,0 +1,298 @@
+.header {
+    background-color: #26bf8f;
+    margin-bottom: 48px;
+  }
+
+  html {
+    font-family: Arial, sans-serif;
+  }
+
+  .header h1 {
+    color: rgb(0, 0, 0);
+  }
+
+.home-page-wrapper {
+    margin: auto;
+    max-width: 1000px;
+    padding: 0 16px;
+  }
+
+
+.header-row h1 {
+  padding: 0 15px;
+}
+
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .nav-list {
+    display: flex;
+    gap: 72px;
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  .nav-list a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .home-page-title {
+    justify-content: center;
+  }
+
+  .form {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+  .form-body {
+    margin: 10px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .form-input {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-page-wrapper {
+  margin: auto;
+  max-width: 1000px;
+  padding: 0 10px;
+}
+
+.form-page-wrapper small {
+  color: red;
+}
+
+.titles {
+  justify-content: center;
+  font-weight: bold;
+}
+
+.home-display {
+  padding: 0 16px;
+  border-color: black;
+}
+
+
+
+.home-layout h2 a{
+  color: green;
+  text-decoration: none;
+}
+
+
+
+.store-grid img {
+  object-fit: fill;
+  width: 100%;
+}
+
+.store-child {
+  text-align: center;
+}
+
+.store-child a {
+  text-decoration: none;
+  color: black;
+}
+
+.store-child p {
+  background-color: #76eec8;
+  display: block;
+  font-size: 24px;
+}
+
+.store-child p:hover {
+  background-color: rgb(188, 211, 214);
+}
+
+.page-footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+
+.page-footer img {
+  width: 10%;
+  height: 10%;
+}
+
+.button {
+  display: flex;
+  font-size: 2rem;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.page-display{
+  text-align: center;
+}
+
+hr {
+  border:0;
+  margin:0;
+  width:100%;
+  height:2px;
+  background: #26bf8f;
+}
+
+.about-layout {
+  text-align: center;
+}
+
+.about-us {
+  text-align: center;
+}
+
+
+@media screen and (min-width: 900px) {
+  .store-grid {
+    display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 3rem 1rem;
+  }
+  .home-layout {
+    display: flex;
+    border-color: black;
+    padding-bottom: 10%;
+    justify-content: center;
+    gap: 20%;
+  }
+  .home-layout h2 {
+  padding-top: 5%;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cart-container,
+  .price-container,
+  .scrolling-list-area {
+    padding: 0.5rem;
+  }
+
+
+  .cart-container {
+    display: flex;
+    border: 2px black solid;
+    width: auto;
+    min-height: 20rem;
+    margin: auto;
+    gap: 1rem;
+  }
+
+  .price-container {
+    border: 2px black solid;
+    text-align: center;
+    width: 25%;
+  }
+  /* forces the content to not spill out of the box and instead allows the user to scroll the content within it */
+  .scrolling-list-area {
+    border: 2px black solid;
+    flex: 1;
+    overflow: scroll;
+  }
+
+  .scrolling-list-container {
+    max-height: 0;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    border-color: #26bf8f;
+    border-style: solid;
+    height: 5rem;
+    width: 100%;
+    margin-top: 8px;
+    
+  }
+
+  .cart-item img {
+    width: 20%;
+    height: 100%;
+  }
+
+  .cart-item h2 {
+    padding-right: 10%;
+  }
+
+  .cart-item:first-child {
+    margin-top: 0;
+  }
+
+  .cart-button {
+    font-size: 150%;
+  }
+
+  .about-us-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10%;
+  }
+}
+
+@media screen and (max-width: 899.97px) {
+  .store-grid {
+    display: grid;
+    justify-items: center;
+  }
+  .store-child {
+    padding-top: 6rem;
+  }
+  .page-display img {
+    width: 15rem;
+  }
+  .home-layout {
+    display: flex;
+    border-color: black;
+    padding-bottom: 10%;
+    justify-content: space-around;
+  }
+  .home-layout h2 {
+    padding-top: 5%;
+    }
+
+    .cart-item {
+      display: flex;
+      flex-direction: column;
+      padding-top: 6rem;
+      list-style-type: none;
+      align-items: center;
+      margin: 1%;
+    }
+    .cart-item img {
+      width: 80%;
+    }
+
+    .price-container {
+      margin-top: 10em;
+      display: block;
+      text-align: center;
+    }
+
+    .form-page-wrapper{
+      text-align: center;
+    }
+
+    .scrolling-list-area {
+      text-align: center;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vet</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+<header class="header">
+    <div class="page-wrapper header-row">
+        <h1>Vet</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+              <li><a href="Forms.html">Contact</a></li>
+            </ul>
+          </nav>
+    </div>
+</header>
+    <div class="form-page-wrapper">
+    <h2>Contact forms</h2>
+    <h3>You can also contact us over our email or phone number</h3>
+    <h3>RTV@email.com
+        <br>
+        123456789 987654321
+    </h3>
+<!-- All the parts of the form, the small tags are used to make the *'s smaller but still show the form needs to be filled -->
+    <form action="Forms.html" class="form">
+        <label>Name<small>*</small></label>
+        <input type="text" name="full name" class="form-input" required placeholder="Name">
+
+        <label>Animal and breed<small>*</small></label>
+        <input type="number" name="age" class="form-input" required placeholder="Animal and breed (if applicable)">
+
+        <label>Contact into<small>*</small></label>
+        <input type="text" name="contact info" class="form-input" required placeholder="Phone number OR email address">
+
+        <label>Requested time<small>*</small></label>
+        <input type="time" name="time" class="form-input" required>
+
+        <label>Details<small>*</small></label>
+        <textarea name="text" class="form-input" placeholder="Enter details of the appointment"></textarea>
+        
+        <p>
+        <input type="checkbox" name="Comferm" required>
+        Click to confirm<small>*</small>
+        </p>
+
+        <p>
+        <input type="checkbox" name="newsletter" checked>
+        Sign-up for newsletter
+        </p>
+
+     <input type="submit" value="Submit Form" class="button">
+    </form>
+    </div>
+    <footer class="page-footer">
+        <p>RTV Clinic</p>
+    </footer>
+</body>
+</html>
